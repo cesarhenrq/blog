@@ -19,25 +19,29 @@
   <header><img src="/image 1.svg" />
   </header>
   <main>
-    <form action="">
-      <div id="name">Novo post</div>
+    
+    <button id="addNewPost">Adicionar novo post</button>
+    <div id="formModal" class="formModal">
+      <form>
+        <div id="name">Novo post</div>
 
-      <label for="title">Título</label>
-      <input type="text" name="title" id="title">
+        <label for="title">Título</label>
+        <input type="text" name="title" id="title">
 
-      <label for="author">Autor(a)</label>
-      <input type="text" name="author" id="author">
+        <label for="author">Autor(a)</label>
+        <input type="text" name="author" id="author">
 
-      <label for="image">Imagem de destaque</label>
-      <input type="text" name="image" id="image">
+        <label for="image">Imagem de destaque</label>
+        <input type="text" name="image" id="image">
 
-      <label for="text">Texto</label>
-      <textarea name="text" id="text">
+        <label for="text">Texto</label>
+        <textarea name="text" id="text">
 
       <button id="submitButton">
         Salvar
       </button>
     </form>
+    </div>
   </main>
   <script src="addpost.js"></script>
 </body>

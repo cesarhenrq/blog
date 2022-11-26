@@ -23,5 +23,25 @@ submitButton.addEventListener('click', (event) => {
   document.getElementById('author').value = ''
   document.getElementById('image').value = ''
   document.getElementById('text').value = ''
-  
+  closeModal()
+})
+
+const openModal = () => {
+  document.getElementById('formModal').style.display = "block"
+}
+
+const closeModal = () => {
+  document.getElementById('formModal').style.display = "none"
+}
+
+const addNewPost = document.getElementById('addNewPost')
+
+addNewPost.addEventListener('click', openModal)
+
+window.addEventListener("click", (event) => {
+
+  if (event.target === formModal) {
+
+    closeModal()
+  }
 })
